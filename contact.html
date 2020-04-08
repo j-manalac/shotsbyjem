@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img id="logo" src="./images/logo2.png" alt="logo" />
+        <h4 class="site-info">Buy Photography Prints Online</h4>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a class="nav-link" id="about" href="index.html">Home</a></li>
+          <li><a class="nav-link" id="contact" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <img src="./images/cart.svg" alt="Cart" />
+      </div>
+    </header>
+    <main>
+      <div class="center">
+        <div class="body">
+          <h1 class="body" id="contact-header">Contact Us</h1>
+          <form action="https://httpbin.org/post" name="contact-us" method="post">
+            <!--First Name-->
+            <label class="contact" for="first-name">First Name: </label>
+            <input required type="text" name="first-name" id="first-name" /><br />
+            <!--Last Name-->
+            <label class="contact" for="last-name">Last Name: </label>
+            <input required type="text" name="last-name" id="last-name" /><br />
+            <!--Email ADdress-->
+            <label class="contact" for="email">Email: </label>
+            <input required type="email" name="email" id="email" /><br />
+            <!--Address - Multiple Parts-->
+            <label class="contact" for="address">Address: </label>
+            <input required type="text" name="address" id="address" /><br />
+            <!--City-->
+            <label class="contact" for="city">City: </label>
+            <input required type="text" list="cityList" name="city" id="city" />
+            <datalist id="cityList"></datalist><br />
+            <!--Phone Number-->
+            <label class="contact" for="phone">Phone Number<br />(Format: 123-456-789): </label>
+            <input
+              required
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="^\d{3}-\d{3}-\d{4}$"
+            /><br />
+            <!--Postal Code-->
+            <label class="contact" for="postal-code">Postal Code <br />(Format: X1X-1X1): </label>
+            <input
+              required
+              type="text"
+              name="postal-code"
+              id="postal-code"
+              pattern="^[A-Za-z]\d[A-Za-z][-]\d[A-Za-z]\d$"
+            /><br />
+            <div class="checkbox-button-group">
+              <!--Checkbox option to be phoned-->
+              <label class="contact">Would you like to be phoned? </label>
+              <label class="checkbox" for="check-phone-yes">Yes</label>
+              <input type="checkbox" name="checkbox-phone" id="check-phone-yes" value="1" />
+              <label class="checkbox" for="check-phone-no">No</label>
+              <input type="checkbox" name="checkbox-phone" id="check-phone-no" value="2" /><br />
+            </div>
+            <!--Radio Options-->
+            <div class="radio-button-group">
+              <label class="contact"
+                >Why would you<br />
+                like to contact us?
+              </label>
+              <div>
+                <label class="radio" for="radio-option1">Question</label>
+                <input
+                  type="radio"
+                  name="question"
+                  id="radio-option1"
+                  value="Question"
+                  checked
+                  onclick="enterOrder()"
+                />
+              </div>
+              <div>
+                <label class="radio" for="radio-option2">Comment</label>
+                <input
+                  type="radio"
+                  name="question"
+                  id="radio-option2"
+                  value="Comment"
+                  onclick="enterOrder()"
+                />
+              </div>
+              <div>
+                <label class="radio" for="radio-option3">Order Problem</label>
+                <input
+                  type="radio"
+                  name="question"
+                  id="radio-option3"
+                  value="Order Problem"
+                  onclick="enterOrder()"
+                />
+              </div>
+              <div class="contact" id="if-problem" style="display:none">
+                Please enter the order number:
+                <input type="text" id="order-number" name="order-number" /><br />
+              </div>
+            </div>
+            <!--Comments-->
+            <label for="comments">Please enter your comments below: </label><br />
+            <textarea name="comments1" id="comments" cols="60" rows="5"></textarea><br />
+            <!--Hidden input field with name-->
+            <input type="hidden" name="hiddenName" id="hidden-name" value="Jemimah Manalac" />
+            <!--Submit-->
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" id="submit-button" />
+          </form>
+        </div>
+        <!--Intentionally empty-->
+        <div id="error"></div>
+      </div>
+    </main>
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <img id="logo2" src="./images/logo2.png" alt="logo" />
+          <p id="footer-about">
+            My passion for photography comes from my love of story telling. I hope you will find
+            enjoyment in the stories my photographs tell.
+          </p>
+          <div class="social-media">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h2 id="quick-links">Quick Links</h2>
+          <ul class="footer-links">
+            <li>
+              <a href="index.html" class="home-link">Home</a>
+            </li>
+            <li>
+              <a href="contact.html" class="contact-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2 id="contact-us-link">Subscribe</h2>
+          <form action="https://formspree.io/xknvgwey" method="post">
+            <input
+              type="email"
+              name="reply-to"
+              class="text-input contact-input"
+              placeholder="Email address"
+            />
+            <input type="submit" value="Subscribe" class="subscribe-button" />
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; shotsbyjem.ca | Designed by Jemimah Manalac | 2020
+      </div>
+    </div>
+    <!--Footer-->
+    <script src="contact.js"></script>
+  </body>
+</html>

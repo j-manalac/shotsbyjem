@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--All images used on the website are my own. Every photograph is a photograph I personally took
+            And every logo used (except for Twitter, Facebook and Instagram logos) was created by me.-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img id="logo" src="./images/logo2.png" alt="logo" />
+        <h4 class="site-info">Buy Photography Prints Online</h4>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a class="nav-link" id="about" href="index.html">Home</a></li>
+          <li><a class="nav-link" id="contact" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <img src="./images/cart.svg" alt="Cart" />
+      </div>
+    </header>
+    <main>
+      <!--Sidebar-->
+      <div id="sidebar-vv" class="sidebar"></div>
+      <span id="sidebar-title">&#9776;Filter by Category</span>
+      <!--Sidebar-->
+      <!--Main Content-->
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>Latest Prints</h1>
+          </div>
+          <div class="cta">
+            <!--This button intentionally just reloads the home page-->
+            <button class="cta-select" onclick="window.location.href = 'index.html';">
+              Shop latest prints
+            </button>
+          </div>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./images/milkyWay.jpg" style="width: 100%" alt="Milky Way" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/lizard1.jpg" style="width: 100%" alt="Lizard" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/OrchidMantisShadows.jpg" style="width: 100%" alt="Orchid Mantis" />
+          </div>
+          <!--Arrows for next and previous image in slideshow-->
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
+        </div>
+        <br />
+      </section>
+      <h2 class="filter-title">Showing:All Products</h2>
+      <div id="hzjl" class="products-container"></div>
+    </main>
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <img id="logo2" src="./images/logo2.png" alt="logo" />
+          <p id="footer-about">
+            My passion for photography comes from my love of story telling. I hope you will find
+            enjoyment in the stories my photographs tell.
+          </p>
+          <div class="social-media">
+            <!--Intentionally brings you to just the main homepages for each social media-->
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h2 id="quick-links">Quick Links</h2>
+          <ul class="footer-links">
+            <li>
+              <a href="index.html" class="home-link">Home</a>
+            </li>
+            <li>
+              <a href="contact.html" class="contact-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2 id="contact-us-link">Subscribe</h2>
+          <form action="https://formspree.io/xknvgwey" method="post">
+            <input
+              type="email"
+              name="reply-to"
+              class="text-input contact-input"
+              placeholder="Email address"
+            />
+            <input type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; shotsbyjem.ca | Designed by Jemimah Manalac | 2020
+      </div>
+    </div>
+    <!--Footer-->
+    <script src="./script.js"></script>
+  </body>
+</html>

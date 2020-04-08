@@ -1,0 +1,494 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(55deg, #cff1ef, 20%, #dbe2ef, 60%, #a6b1e1, 20%, #dbe2ef, #f9f7f7);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button {
+  font-family: 'Bebas Neue', cursive;
+}
+
+header {
+  /*Move nav bar onto one line*/
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  /*Centers the header*/
+  margin: auto;
+  align-items: center;
+  background-color: rgb(204, 225, 252);
+}
+
+/*Add styles to the links on nav bar*/
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+.logo-container {
+  /* Take up the whole nav bar*/
+  flex: 1;
+}
+main {
+  min-height: 100%;
+}
+#logo {
+  width: 40%;
+}
+
+.site-info {
+  font-size: 15px;
+  margin: 20px;
+  color: #112d4e;
+}
+
+.main-nav {
+  flex: 2;
+}
+
+.nav-links {
+  /*Space out the nav links*/
+  justify-content: space-around;
+  /*Remove the underline and the bullet points*/
+  list-style: none;
+}
+.nav-link {
+  /*Change colour of each individual link*/
+  color: #112d4e;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #3f72af;
+}
+.cart {
+  flex: 1;
+  /*Move cart image to far right*/
+  justify-content: flex-end;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.intro-text h1 {
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  /*Fill text with color gradient*/
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cta {
+  /*Put button lower*/
+  padding: 10px 0px 0px 0px;
+}
+
+.cta-select {
+  background: #9696af;
+  color: #112d4e;
+  width: 150px;
+  height: 50px;
+  /*Turn cursor to pointer when hovering over button*/
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cta-select:hover {
+  background: #3f72af;
+}
+
+.cover img {
+  height: 60vh;
+}
+*/ .mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #3f72af;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 0.9;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 0.9;
+  }
+}
+/*The following is for the contacts.html page*/
+
+.center {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 60vh;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#contact-header {
+  min-height: 10vh;
+}
+
+/*The following is for the footer*/
+.footer {
+  background: rgb(217, 232, 250);
+  color: #112d4e;
+  height: 300px;
+  position: relative;
+  margin-top: 5%;
+}
+
+.footer .footer-content {
+  display: flex;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  border: 1px solid #f9f7f7;
+  padding: 4em;
+  display: grid;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 600;
+}
+#footer-about {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75em;
+}
+.footer-links {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.75em;
+  text-decoration: none;
+}
+.home-link,
+.contact-link {
+  text-decoration: none;
+  color: #112d4e;
+}
+.home-link:hover,
+.contact-link:hover {
+  opacity: 0.7;
+  color: #3f72af;
+}
+
+.footer-links > li {
+  list-style: none;
+  font-size: 1.2em;
+  margin: 5px 0;
+  margin-left: 3%;
+}
+
+.footer-links > li:hover {
+  color: whitesmoke;
+}
+
+.footer .footer-bottom {
+  background: #3f61aa;
+  color: #112d4e;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  /*Ensures that the footer remains at the bottom*/
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 500;
+}
+
+#logo2 {
+  width: 40%;
+}
+/*Styling for the font awesome icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #112d4e;
+}
+
+/* Icon turns white when hovered over */
+.fa:hover {
+  opacity: 0.7;
+  color: #3f72af;
+}
+
+/*Styling for input validity*/
+.contact {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+#if-problem {
+  display: none;
+  text-align: right;
+}
+
+input[type='submit'],
+[type='reset'] {
+  background: #9696af;
+  color: #112d4e;
+  width: 100px;
+  height: 30px;
+  /*Turn cursor to pointer when hovering over button*/
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+input[type='submit']:hover,
+[type='reset']:hover {
+  background: #3f72af;
+}
+/*Styling for Products */
+
+/*This gets added to the filtered elements*/
+.show {
+  display: none;
+}
+
+.filter-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: #112d4e;
+  margin-left: 70px;
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  overflow-x: hidden;
+  grid-gap: 0.5em;
+  border-top: solid 0.5px #e8e8e8;
+  padding-top: 2.5em;
+}
+
+.product {
+  overflow: hidden;
+  transition: transform 500ms;
+}
+
+.product:hover {
+  transform: scale(0.8);
+}
+
+.product-image-container {
+  margin: auto;
+  overflow: hidden;
+  width: 70%;
+  height: 70%;
+  border-top: solid 7px black;
+  border-bottom: solid 7px black;
+  border-right: solid 5px black;
+  border-left: solid 5px black;
+}
+
+.product-image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.product-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.product-category {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.product-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.product-price::before {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  content: '$';
+}
+
+.product-price::after {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  content: ' CAD';
+}
+
+/* SideBar Menu Styling */
+
+#sidebar-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 70px;
+}
+.sidebar {
+  font-family: 'Bebas Neue', cursive;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 20;
+  left: 0;
+  overflow-x: hidden;
+  background-color: #111;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar button {
+  padding: 8px 40px 8px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: #6f6f89;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 240px;
+  height: 50px;
+}
+
+.sidebar button:hover {
+  background-color: #3f72af;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .close-button {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.radio-button-group {
+  display: grid;
+  grid: 'label first second third';
+}
+
+.radio-button-group > div {
+  display: grid;
+  align-items: center;
+  grid: 'label button';
+  grid-gap: 0.2em;
+}
+
+.radio-button-group > div > label {
+  width: auto;
+  margin-left: 10px;
+}
